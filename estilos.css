@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cuerpo principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 120px); /* Ajustar altura para el encabezado y pie de página */
+    padding: 20px;
+}
+
+.calculator {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="number"], input[type="text"], input[type="email"], textarea {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #bdc3c7;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.result, .recommendations, .exercise, .diet {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.result {
+    color: #333;
+}
+
+.recommendations.success {
+    color: #2ecc71;
+}
+
+.exercise, .diet {
+    color: #555;
+}
+
+/* Formulario de retroalimentación */
+.feedback-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.feedback-form h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#form-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #27ae60; /* Color para mensajes de éxito */
+}
